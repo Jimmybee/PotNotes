@@ -9,6 +9,7 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import SnapKit
 
 class EditItemViewController: UIViewController {
     
@@ -41,17 +42,26 @@ class TextField: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupConstraints()
+        title.text = "Test"
     }
     
-    convenience init(frame: CGRect? = nil, vari: Variable<String>) {
-        self.init(frame: .zero)
-        vari.asObservable().bind(to: textField.rx.text)
-        
-    }
+//    convenience init(frame: CGRect? = nil) {
+//        self.init(frame: .zero)
+//    }
     
     func setupConstraints() {
         addSubview(title)
         addSubview(textField)
+        
+        title.snp.makeConstraints { (make) in
+            make.top.left.right.equalToSuperview()
+            make.bottom.equalTo(textField.snp.top)
+        }
+        
+        textField.snp.makeConstraints { (make) in
+            make.bottom.left.right.equalToSuperview()
+        }
     }
     
 }
