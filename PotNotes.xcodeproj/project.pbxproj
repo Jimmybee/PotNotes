@@ -18,6 +18,7 @@
 		66E5EEDE2014E2D90039AFAE /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E5EEDD2014E2D90039AFAE /* EditItemViewController.swift */; };
 		66E5EEE2201508000039AFAE /* PotteryItemRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E5EEE1201508000039AFAE /* PotteryItemRealm.swift */; };
 		BA551830602AE8E8D49CFCD2 /* Pods_PotNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD1EEBFE7CDDBD0961EBB51 /* Pods_PotNotes.framework */; };
+		C3E080972019093D0072093C /* ListSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E080962019093D0072093C /* ListSelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		66E5EEE1201508000039AFAE /* PotteryItemRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotteryItemRealm.swift; sourceTree = "<group>"; };
 		97DDA796B84DF1DB38F62DC8 /* Pods-PotNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PotNotes/Pods-PotNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		A19F9F4E00D937A7C6CABF67 /* Pods_PotNotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PotNotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E080962019093D0072093C /* ListSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSelectionViewController.swift; sourceTree = "<group>"; };
 		CDD1EEBFE7CDDBD0961EBB51 /* Pods_PotNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PotNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9F7F322A90ABEDEA19F369 /* Pods-PotNotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotNotesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PotNotesTests/Pods-PotNotesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 				66E5EEB52014D8CA0039AFAE /* AppDelegate.swift */,
 				66E5EED92014DA4A0039AFAE /* ItemListViewController.swift */,
 				66E5EEDD2014E2D90039AFAE /* EditItemViewController.swift */,
+				C3E080962019093D0072093C /* ListSelectionViewController.swift */,
 				66E5EEBD2014D8CA0039AFAE /* Main.storyboard */,
 				66E5EEC02014D8CA0039AFAE /* Assets.xcassets */,
 				66E5EEC22014D8CA0039AFAE /* LaunchScreen.storyboard */,
@@ -298,6 +301,7 @@
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -307,6 +311,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -375,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66E5EEDC2014E17F0039AFAE /* PotteryItem.swift in Sources */,
+				C3E080972019093D0072093C /* ListSelectionViewController.swift in Sources */,
 				66E5EEE2201508000039AFAE /* PotteryItemRealm.swift in Sources */,
 				66E5EEB62014D8CA0039AFAE /* AppDelegate.swift in Sources */,
 				66E5EEDA2014DA4A0039AFAE /* ItemListViewController.swift in Sources */,
@@ -535,6 +541,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G55S74JQUS;
 				INFOPLIST_FILE = PotNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JB.PotNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -551,6 +558,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G55S74JQUS;
 				INFOPLIST_FILE = PotNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JB.PotNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";

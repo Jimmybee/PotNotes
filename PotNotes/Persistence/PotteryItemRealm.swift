@@ -27,8 +27,8 @@ class PotteryItemRealm: Object {
         self.name = potteryItem.name
         self.created = potteryItem.created
         self.sellPrice.value = potteryItem.sellPrice
-        self.type = potteryItem.type?.rawValue
-        self.glase = potteryItem.glase?.rawValue
+//        self.type = potteryItem.type?.rawValue
+//        self.glase = potteryItem.glase?.rawValue
         self.completed = potteryItem.completed
         self.images =  potteryItem.images?.flatMap({ UIImageJPEGRepresentation($0, 0.5) })
         self.height.value = potteryItem.height

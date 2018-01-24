@@ -8,6 +8,8 @@ target 'PotNotes' do
     pod 'RxCocoa',    '~> 4.0'
     pod 'RxSwift',    '~> 4.0'
     pod 'RxRealm'
+    pod 'RxGesture'
+
     
     
     target 'PotNotesTests' do
