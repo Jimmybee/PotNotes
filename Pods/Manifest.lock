@@ -1,4 +1,5 @@
 PODS:
+  - Kingfisher (4.6.1)
   - Realm (3.1.0):
     - Realm/Headers (= 3.1.0)
   - Realm/Headers (3.1.0)
@@ -9,6 +10,9 @@ PODS:
   - RxGesture (1.2.1):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
+  - RxOptional (3.3.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
   - RxRealm (0.7.5):
     - RealmSwift (~> 3.0)
     - RxSwift (~> 4.0)
@@ -16,21 +20,25 @@ PODS:
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
+  - Kingfisher
   - RxCocoa (~> 4.0)
   - RxGesture
+  - RxOptional
   - RxRealm
   - RxSwift (~> 4.0)
   - SnapKit
 
 SPEC CHECKSUMS:
+  Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
   Realm: 09513d7c054678d65cd02ce09871f805b0d758ac
   RealmSwift: e868fee9b10e5490ad94b6b6ecd9027944da1824
   RxCocoa: fd0862fd2df95fa55562ad28ffd2522c25eb4a85
   RxGesture: c278eb05b187abd47e11e65464ae4de53ab71d95
+  RxOptional: e5448d3e21024489e07c31f6a262f2b50c975367
   RxRealm: a6c6c0a07cb61f34209969ca6657734edfdfff30
   RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: d891ac85110c1ddcb27c2b7aff346616ae9fbfa8
+PODFILE CHECKSUM: e47271e874462e76d2daf1a017f997c04495cdd3
 
 COCOAPODS: 1.4.0
